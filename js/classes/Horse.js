@@ -1,5 +1,5 @@
 class Horse {
-    speed;
+    speed = 0.5;
     position = 0;
     name;
     width = 50;
@@ -7,12 +7,12 @@ class Horse {
 
     constructor(name, speed) {
         this.name = name;
-        this.speed = speed;
+        this.speed = speed ?? this.speed;
     }
 
     run() {
         const velocity = Math.random();
-        this.position += (1 + velocity);
+        this.position += (this.speed + velocity);
         this.htmlEl.style.left = `${this.position}px`;
     }
 

@@ -7,10 +7,10 @@ const resetButton = document.getElementById('reset-btn');
 const winnerEl = document.getElementById('winner');
 
 const game = new Game(hippodrome, winnerEl);
-game.setHorse(new Horse('Pegas', 50));
-game.setHorse(new Horse('Izolda', 50));
-game.setHorse(new Horse('Fly', 50));
-game.setHorse(new Horse('Horse', 50));
+game.setHorse(new Horse('Pegas'));
+game.setHorse(new Horse('Izolda'));
+// game.setHorse(new Horse('Fly'));
+// game.setHorse(new Horse('Horse'));
 game.renderHorses();
 
 startButton.addEventListener('click', () => {
@@ -25,6 +25,9 @@ startButton.addEventListener('click', () => {
 
 resetButton.addEventListener('click', () => {
     game.reset();
-    startButton.innerText = 'Start';
+
+    if(!game.isStarted) {
+        startButton.innerText = 'Start';
+    }
 });
 
