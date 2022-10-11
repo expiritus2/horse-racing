@@ -1,0 +1,23 @@
+#hippodrome {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid black;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+.horse {
+    height: 50px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#winner {
+    width: 100%;
+    text-align: center;
+}

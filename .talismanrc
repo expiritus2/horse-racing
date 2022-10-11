@@ -1,0 +1,4 @@
+fileignoreconfig:
+- filename: index.html
+  checksum: 9ebc8c4e345dd40ac7962bc9e20a7e52c7d6622e5f04e3a0fce9340155a8dba1
+version: "1.0"
